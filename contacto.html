@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Styles1.css">
+    <title>Galitzia Cousine - Contacto</title>
+</head>
+<body>
+    <header>
+        <a id="top"></a>
+       
+            <ul >
+                <li><a class="menu servicios" href="index.html" data-title="Inicio"><span><span>Inicio</span></span></a></li>
+            
+            </ul>
+        <br><br><br>
+        <div class="stext3" id="menus">
+            <h1>Contacto</h1>
+        </div>
+        <br>
+        <br>
+    </header>
+    <form action="" method="" id="formulario">
+        <div class="grid">
+          <label for="nombre" class="titulo">Nombre: </label>
+          <input type="text" name="nombre" id="nombre" class="campo" maxlength="15" pattern="[A-Za-z]{2,15}" title="Introduzca entre 2 y 12 letras" placeholder="Introduzca entre 2 y 12 letras" required/>
+          <label for="apellido" class="titulo">Apellido: </label>
+          <input type="text" name="apellido" id="apellido" class="campo" maxlength="15" pattern="[A-Za-z]{2,15}" title="Introduzca entre 2 y 12 letras" placeholder="Introduzca entre 2 y 12 letras" required/>
+          <label for="email">Email: </label>
+          <input type="email" name="email" placeholder="sunombre@dominio.com" required>
+          <label for="tel" class="titulo">Teléfono:</label>
+          <input type="tel" name="tel" id="tel" class="campo" pattern="[0-9]{8}" title="Introduzca 8 cifras" placeholder="Introduzca 8 cifras" required>    
+          <label for="fechayhora">Fecha Nacimiento (opcional)</label>
+          <input type="datetime-local" name="fechayhora">
+          <span class="titulo">Sexo:</span>
+          <span class="campo">
+            <label>
+              <input type="radio" value="0" name="radio" checked>
+              <span>F</span>
+            </label>
+            <label>
+              <input type="radio" value="1" name="radio">
+              <span>M</span>
+            </label>
+            <label>
+              <input type="radio" value="2" name="radio">
+              <span>X</span>
+            </label>
+          </span>
+          <span>Comentario o sugerencias?</span>
+          <textarea id="question" rows="4"></textarea>
+          <span></span>
+          <span class="campo">
+            <input type="checkbox" id="mayor" name="mayor" value="mayor">
+            <label for="mayor"> Mayor de 18 años</label>
+          </span>
+          <span></span>
+          <span>
+          <p id="mensaje_error"></p>
+            <input type="submit" name="send" id="send" value="Enviar">
+            <input type="reset" name="clear" id="clear" value="Borrar">
+          </span>
+          <br><br>
+        </div>
+        <p>La fecha de nacimiento se tiene en cuenta para una pequeña sorpresa de nuestra parte</p>
+    </form>
+    <script src="JS/valida.js"></script> 
+</body>
+</html>
